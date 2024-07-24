@@ -1,4 +1,4 @@
-package med.app.api.medico;
+package med.app.api.domain.medico;
 
 public enum Especialidade {
 
