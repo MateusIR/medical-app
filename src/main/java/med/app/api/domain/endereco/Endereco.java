@@ -2,7 +2,6 @@ package med.app.api.domain.endereco;
 
 import jakarta.persistence.Embeddable;
 import lombok.*;
-
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
