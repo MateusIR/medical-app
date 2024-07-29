@@ -31,7 +31,7 @@ public class AgendarConsultas {
         }
 
         if ( dadosConsulta.idMedico() != null && !medicoRepository.existsById(dadosConsulta.idMedico())){
-            throw new ValidacaoExeption("Id do paciente não existe");
+            throw new ValidacaoExeption("Id do medico não existe");
         }
 
         var paciente = pacienteRepository.findById(dadosConsulta.idPaciente()).get();
@@ -41,7 +41,14 @@ public class AgendarConsultas {
     }
 
     private Medico escolheMedico(DadosAgendamentoConsulta dadosConsulta) {
+     if (dadosConsulta.idMedico() != null){
+         return medicoRepository.findById(dadosConsulta.idMedico()).get();
+     }
+if (dadosConsulta.especialidade() == null){
+    throw new ValidacaoExeption("especialicade não preenchida");
 
+}
+        return medicoRepository.escolherMedicoAleatorioLivreNaData(dadosConsulta.especialidade(), dadosConsulta.data());
     }
 
 
