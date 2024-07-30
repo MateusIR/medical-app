@@ -3,10 +3,12 @@ package med.app.api.domain.consultas.consultas;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 import med.app.api.domain.medico.Medico;
 import med.app.api.domain.paciente.Paciente;
 
+import javax.net.ssl.SSLSession;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
@@ -14,6 +16,7 @@ import java.time.LocalDateTime;
 @Entity(name = "Consulta")
 @NoArgsConstructor
 @AllArgsConstructor
+@Getter
 @EqualsAndHashCode(of = "id")
 public class Consulta {
 
@@ -33,4 +36,6 @@ public class Consulta {
 
     public Consulta(Long id, Medico medico, Paciente paciente, LocalDateTime data) {
     }
+
+
 }
