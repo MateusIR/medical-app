@@ -34,5 +34,4 @@ public class Paciente {
 
     private Endereco endereco;
 
-
 }

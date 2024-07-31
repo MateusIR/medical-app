@@ -24,4 +24,7 @@ order by rand()
 limit 1
 """)
     Medico escolherMedicoAleatorioLivreNaData(Especialidade especialidade, LocalDateTime data);
+
+
+
 }
