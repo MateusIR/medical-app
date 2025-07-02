@@ -26,7 +26,6 @@ public class AgendarConsultas {
     private MedicoRepository medicoRepository;
     @Autowired
     PacienteRepository pacienteRepository;
-
     @Autowired
     private List<ValidacoesConsulta> validacoesConsultaList;
 
