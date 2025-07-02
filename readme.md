@@ -85,7 +85,7 @@ Uma API RESTful para gerenciamento de consultas médicas, desenvolvida com Sprin
    ```
 
 
-## Como Criar um Usuário Adm
+## Criar um Usuário Adm
 
 
 Para criar um usuário administrativo diretamente no banco de dados, siga estes passos:
@@ -138,7 +138,3 @@ Para criar um usuário administrativo diretamente no banco de dados, siga estes 
 - `POST /consultas` - Agenda uma nova consulta
 - `DELETE /consultas` - Cancela uma consulta agendada
 
-
-
-## Licença
-Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE para obter mais informações.
